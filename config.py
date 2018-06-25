@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 # @Author: zz
 # @Date:   2018-06-24 18:15:55
-# @Last Modified by:   zz
-# @Last Modified time: 2018-06-25 10:54:47
+# @Last Modified by:   zhiz
+# @Last Modified time: 2018-06-25 17:34:04
 
 
 # 交易类型
-symbols = ['btc', 'usdt']
+symbols = ['ft', 'usdt']
 # 数量
-amount = 1 
+amount = 5
 # 深度图买一卖一差值
-price_difference = 0.02
+price_difference = 0.000004
 # 当前直接购买 （万二的差价，1直接下单）
 is_direct_buy = 0
 # 查询余额类型
