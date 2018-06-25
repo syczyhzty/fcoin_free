@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: zz
 # @Date:   2018-06-24 17:39:28
-# @Last Modified by:   zz
-# @Last Modified time: 2018-06-25 10:45:17
+# @Last Modified by:   zhiz
+# @Last Modified time: 2018-06-25 17:33:30
 
 import os
 import hmac
@@ -103,8 +103,11 @@ class Fcoin():
             self.handler_error_if_needed(r.json())
             return r.json()
         else:
-            print('fcoin error is', r.json(), api_url)
-            self.handler_error_if_needed(r.json())
+            if 'json' in r: 
+                print('fcoin error is', r.json(), api_url)
+                self.handler_error_if_needed(r.json())
+            else:
+                print(r, r.text, r.status_code)
             print('reconnect...')
             time.sleep(self.time)
             return self.signed_request(method, api_url, **payload)
