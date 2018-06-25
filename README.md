@@ -7,7 +7,7 @@
 <img src="./barcode.png" align=center />
 
 ## 策略以及风险
-1. 先买后卖，
+1. 先买后卖
 2. 根据深度图买一卖一差值
 3. 万二的差价
 
@@ -69,3 +69,10 @@ windows搜索cmd，mac搜索terminal
 1. 搜索cmd（终端）并且打开
 2. 执行`cd`空格然后拖拽fcoin这个文件夹到cmd里面 回车
 3. mac `python3 fees.py` windows: `python fees.py`
+
+
+## 打赏
+如果你觉得使用不错
+
+* BTC: 3AdbaFQpUWcuQHzQmboC9MzGdL3MesP5GS
+* ETH: 0xe17679962f4dc3e4f7f71075f421a0e6897a4b78
