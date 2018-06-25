@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: zz
 # @Date:   2018-06-24 18:15:55
-# @Last Modified by:   zz
-# @Last Modified time: 2018-06-25 10:41:39
+# @Last Modified by:   zhiz
+# @Last Modified time: 2018-06-25 17:15:25
 
 from fcoin import Fcoin
 from fcoin_websocket.fcoin_client import fcoin_client
@@ -56,7 +56,6 @@ class Robot(object):
 		buy_order_id = buy_result['data']
 		if buy_order_id:
 			print('买单', this_price, '价格成功委托', '订单ID', buy_order_id)
-			publish('买单', this_price, buy_order_id)
 		return buy_order_id
 
 	# 卖操作
@@ -71,7 +70,6 @@ class Robot(object):
 		sell_order_id = sell_result['data']
 		if sell_order_id:
 			print('卖单', this_price, '价格成功委托', '订单ID', sell_order_id)
-			publish('卖单', this_price, sell_order_id)
 		return sell_order_id
 
 
