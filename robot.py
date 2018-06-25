@@ -2,7 +2,7 @@
 # @Author: zz
 # @Date:   2018-06-24 18:15:55
 # @Last Modified by:   zhiz
-# @Last Modified time: 2018-06-25 17:15:25
+# @Last Modified time: 2018-06-25 17:23:56
 
 from fcoin import Fcoin
 from fcoin_websocket.fcoin_client import fcoin_client
@@ -53,6 +53,7 @@ class Robot(object):
 		ticker = self.ticker
 		print('准备买入', this_price, ticker)
 		buy_result = self.fcoin.buy(this_symbol, self.trunc(this_price, self.price_decimal), this_amount)
+		print('buy_result is', buy_result)
 		buy_order_id = buy_result['data']
 		if buy_order_id:
 			print('买单', this_price, '价格成功委托', '订单ID', buy_order_id)
